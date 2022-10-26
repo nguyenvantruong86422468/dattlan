@@ -1,0 +1,16 @@
+.footer{
+    background-color: aliceblue;
+}
+.content{
+    list-style: none;
+    
+} 
+h5{
+    background-color: white;
+}
+ul li a {
+    color: black;
+}
+ul li a:hover {
+    color: green;
+}

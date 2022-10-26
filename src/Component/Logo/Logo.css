@@ -41,14 +41,48 @@
   .letter:nth-child(5) {
     -webkit-animation-delay: 0.3333333333s;
             animation-delay: 0.3333333333s;
-    color: #34a853;
+    color: #ea4335;
   }
   .letter:nth-child(6) {
     -webkit-animation-delay: 0.4166666667s;
             animation-delay: 0.4166666667s;
     color: #ea4335;
   }
-  
+  .letter:nth-child(7) {
+    -webkit-animation-delay: 0.1666666667s;
+            animation-delay: 0.1666666667s;
+    color: #fbbc05;
+  }
+  .letter:nth-child(8) {
+    -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s;
+    color: #4285f4;
+  }
+  .letter:nth-child(9) {
+    -webkit-animation-delay: 0.3333333333s;
+            animation-delay: 0.3333333333s;
+    color: #34a853;
+  }
+  .letter:nth-child(10) {
+    -webkit-animation-delay: 0.0833333333s;
+            animation-delay: 0.0833333333s;
+    color: #4285f4;
+  }
+  .letter:nth-child(11) {
+    -webkit-animation-delay: 0.1666666667s;
+            animation-delay: 0.1666666667s;
+    color: #ea4335;
+  }
+  .letter:nth-child(12) {
+    -webkit-animation-delay: 0.1666666667s;
+            animation-delay: 0.1666666667s;
+    color: #fbbc05;
+  }
+  .letter:nth-child(13) {
+    -webkit-animation-delay: 0.3333333333s;
+            animation-delay: 0.3333333333s;
+    color: #34a853;
+  }
   @-webkit-keyframes bounce {
     0% {
       transform: translate3d(0, 0, 0);
