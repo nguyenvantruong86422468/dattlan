@@ -21,6 +21,7 @@ import Register from './pages/Register/Register';
 import { ChairTableLayout } from './layout/ChairTableLayout';
 import ChairTable from './pages/ChairTable/ChairTable';
 import Profile from './pages/Profile/Profile';
+import Thuvienphim from './pages/ThuVienPhim/Thuvienphim';
 export const history = createBrowserHistory();
 function App() {
   return (
@@ -32,7 +33,9 @@ function App() {
           <CustomerLayout exact path="/filmdetail/:id" component={FilmDetail} />
           <CustomerLayout exact path="/chairtable" component={ChairTable} />
           <CustomerLayout exact path="/profile" component={Profile} />
+          <CustomerLayout exact path="/Thuvienphim" component={Thuvienphim} />
 
+          
           <AdminLayout exact path="/admin/film" component={MovieManager}/>
           <AdminLayout exact path="/admin/film/addfilm" component={AddMovie}/>
           <AdminLayout exact path="/admin/film/editfilm/:id" component={EditMovie}/>
@@ -43,7 +46,7 @@ function App() {
           <UserLayout exact path="/register" Component={Register} />
 
           <ChairTableLayout exact path="/chairtable/:id" Component={ChairTable} />
-
+          
 
         </Switch>
       </Router>

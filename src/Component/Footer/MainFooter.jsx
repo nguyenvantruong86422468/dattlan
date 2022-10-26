@@ -7,8 +7,8 @@ export default function MainFooter() {
           <Col span={12}>
             <h5>Website Build by Team:</h5>
             <ul>
-              <li><a href="https://github.com/BinFlex97">Đinh Quang Khánh</a> </li>
-              <li><a href="https://github.com/HieuPhan4526">Phan Minh Hiếu</a></li>
+              <li><a href="https://github.com/BinFlex97">Trần Đình Hiếu</a> </li>
+              <li><a href="https://github.com/HieuPhan4526">Nguyễn Văn Trường</a></li>
             </ul>
           </Col>
           <Col span={12}>

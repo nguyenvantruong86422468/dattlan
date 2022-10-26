@@ -59,19 +59,24 @@ export default function CustomerHeader() {
             <ul className="navbar-nav mr-auto">
               <li className="nav-item"><Logo /></li>
               <li className="nav-item active">
-                <span style={{ cursor: "pointer", fontSize: 30, fontWeight: 700 }} onClick={() => {
+                <span style={{ cursor: "pointer", fontSize: 20, fontWeight: 700 }} onClick={() => {
                   history.push("/home")
                 }} className="nav-link menu-item px-5">Home</span>
               </li>
               <li className="nav-item menu-item">
-                <span style={{ cursor: "pointer", fontSize: 30, fontWeight: 700 }} onClick={() => {
+                <span style={{ cursor: "pointer", fontSize: 20, fontWeight: 700 }} onClick={() => {
                   let user = JSON.parse(localStorage.getItem(USER_LOGIN))
                   if (user) {
                     history.push("/admin/film")
                   } else {
                     history.push("/login")
                   }
-                }} className="nav-link">Admin</span>
+                }} className="nav-link">Quản lý danh sách phim</span>
+              </li>
+              <li>
+              <span style={{ cursor: "pointer", fontSize: 20, fontWeight: 700 }} onClick={() => {
+                  history.push("/Thuvienphim")
+                }} className="nav-link menu-item px-5">Thư viện phim</span>
               </li>
             </ul>
             {renderUser()}
