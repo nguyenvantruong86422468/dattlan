@@ -1,17 +1,17 @@
 import React from "react";
 import Banner from "../Home/Component/Banner";
-import "../ThuVienPhim/Thuvienphim.css";
+import Phimhot from "../Home/Component/Phimhot";
+
 
 const Thuvienphim = (props) => {
     return (
         <div>
             <Banner />
             <div>
-                <div className="Thuvienphim">
+                <div id="Thuvienphim">
                     <p> Danh sách phim hot </p>
-                    <div>
-                        
-                    </div>
+                    <Phimhot/>
+                    
 
 
                 </div>

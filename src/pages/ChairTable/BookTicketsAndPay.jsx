@@ -8,6 +8,8 @@ import { CloseCircleOutlined, UserOutlined } from "@ant-design/icons";
 import "./chairTableCss.css";
 import { DAT_VE } from "../../Redux/Type/QuanLyDatVeType";
 import { ThongTinDatVe } from "../../_core/models/thongTinDatVe";
+
+
 export default function BookTicketsAndPay(props) {
   let { id } = props.match.params;
   const { thongTinPhongVe, danhSachGheDangDat } = useSelector(

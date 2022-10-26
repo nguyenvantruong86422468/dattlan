@@ -1,5 +1,7 @@
 import { GROUP_ID } from "../ultil/setting"
 import { Service } from "./Service"
+import { GROUP_ID2 } from "../ultil/setting"
+
 
 export class MovieService extends Service{
     GetBannerList = () => {
@@ -9,6 +11,12 @@ export class MovieService extends Service{
         if(name.trim() !== ""){
             return this.get(`/api/QuanLyPhim/LayDanhSachPhim?maNhom=${GROUP_ID}&tenPhim=${name}`)
         }else return this.get(`/api/QuanLyPhim/LayDanhSachPhim?maNhom=${GROUP_ID}`)
+        
+    }
+    GetMovieList2 = (name = "") => {
+        if(name.trim() !== ""){
+            return this.get(`/api/QuanLyPhim/LayDanhSachPhim?maNhom=${GROUP_ID2}&tenPhim=${name}`)
+        }else return this.get(`/api/QuanLyPhim/LayDanhSachPhim?maNhom=${GROUP_ID2}`)
         
     }
     GetMovieInfo = (id) => {
