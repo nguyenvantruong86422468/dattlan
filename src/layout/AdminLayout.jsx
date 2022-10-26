@@ -17,7 +17,7 @@ export default function AdminLayout(props) {
             let user = JSON.parse(localStorage.getItem(USER_LOGIN))
             return <div style={{ cursor: "pointer",display:"Flex",alignItems:"center" }} className="d-flex text-dark">
                 <NavLink to="/profile">
-                    <Avatar size="large" icon={<img src="https://picsum.photos/200/300" alt="" />} />
+                    <Avatar size="large" icon={<img src="https://i.pinimg.com/originals/97/08/1a/97081a743c19f515d26d298bd62af7ed.png?fbclid=IwAR2uk4skOuwN_2NpPoM_4cCsjyi7wDvH_KGkGjrNqwDq1LHijODkZGtZ62k" alt="" />} />
                     <span className="pl-2 pr-4">
                         {user.hoTen}
                         /
@@ -103,13 +103,13 @@ export default function AdminLayout(props) {
                                 <props.component {...propsRoute} />
                             </div>
                         </Content>
-                        <Footer
+                        {/* <Footer
                             style={{
                                 textAlign: 'center',
                             }}
                         >
                             <MainFooter/>
-                        </Footer>
+                        </Footer> */}
                     </Layout>
                 </Layout>
             }}
