@@ -27,10 +27,12 @@ let RenderBanner = () => {
   return bannerArr.map((banner, index) => {
     return <div key={index}>
       <img style={contentStyle} src={banner.hinhAnh} alt="" />
+      
     </div>
   })
 }
 export default function Banner() {
+  
   return (
     <div className='section'>
       <h1>Đặt Vé Xem Phim</h1>
