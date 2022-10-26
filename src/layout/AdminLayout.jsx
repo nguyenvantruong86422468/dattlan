@@ -54,7 +54,7 @@ export default function AdminLayout(props) {
                         <div className="logo p-3" style={{ border: "1px solid gray" }}>
                             <NavLink to={"/home"}>
                                 <GitlabOutlined className="logo" style={{ fontSize: "40px" }} />
-                                <span style={{ color: "white", fontSize: "20px" }}>Cyber Cinema</span>
+                                <span style={{ color: "white", fontSize: "20px" }}> Quản Trị</span>
                             </NavLink>
 
                         </div>
