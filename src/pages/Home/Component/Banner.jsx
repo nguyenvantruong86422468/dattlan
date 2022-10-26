@@ -35,7 +35,7 @@ export default function Banner() {
   
   return (
     <div className='section'>
-      <h1>Đặt Vé Xem Phim</h1>
+      <h1>Phim hot</h1>
       <Carousel autoplay>
         {RenderBanner()}
       </Carousel>

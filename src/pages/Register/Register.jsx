@@ -14,15 +14,18 @@ export default function Register() {
   const dispatch = useDispatch();
   const formik = useFormik({
     initialValues: {
+      hoTen: "",
       taiKhoan: "",
       matKhau: "",
       email: "",
       soDt: "",
-      hoTen: "",
       maNhom: GROUP_ID,
     },
     validationSchema: Yup.object({
       //Các hàm validation của từng trường dữ liệu
+      hoTen: Yup.string()
+      .required("Vui lòng không được để trống")
+      .matches(/^[A-Z a-z]+$/, "Họ tên chưa hợp lệ"),
       taiKhoan: Yup.string()
         .required("Tài khoản không được để trống")
         .min(6, "Tối thiếu 6 ký tự")
@@ -38,9 +41,6 @@ export default function Register() {
         .required("Vui lòng không được để trống")
         .email("Email Không hợp lệ"),
       soDt: Yup.string().required("Vui lòng không được để trống"),
-      hoTen: Yup.string()
-        .required("Vui lòng không được để trống")
-        .matches(/^[A-Z a-z]+$/, "Họ tên chưa hợp lệ"),
     }),
 
     onSubmit: (values) => {
@@ -71,6 +71,20 @@ export default function Register() {
         </div>
       </div>
       <form onSubmit={formik.handleSubmit}>
+      <div className="form-group">
+          <label htmlFor="matKhau">Họ Tên</label>
+          <input
+            type="text"
+            className="form-control"
+            id="hoTen"
+            name="hoTen"
+            onChange={formik.handleChange}
+            value={formik.values.hoTen}
+          />
+          {formik.touched.hoTen && formik.errors.hoTen ? (
+            <div className="text-danger">{formik.errors.hoTen}</div>
+          ) : null}
+        </div>
         <div className="form-group">
           <label htmlFor="taiKhoan">Tài Khoản</label>
           <input
@@ -125,20 +139,6 @@ export default function Register() {
           />
           {formik.touched.soDt && formik.errors.soDt ? (
             <div className="text-danger">{formik.errors.soDt}</div>
-          ) : null}
-        </div>
-        <div className="form-group">
-          <label htmlFor="matKhau">Họ Tên</label>
-          <input
-            type="text"
-            className="form-control"
-            id="hoTen"
-            name="hoTen"
-            onChange={formik.handleChange}
-            value={formik.values.hoTen}
-          />
-          {formik.touched.hoTen && formik.errors.hoTen ? (
-            <div className="text-danger">{formik.errors.hoTen}</div>
           ) : null}
         </div>
 
