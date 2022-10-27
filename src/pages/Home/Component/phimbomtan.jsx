@@ -10,7 +10,7 @@ import { movieService } from "../../../Service/MovieService";
 
 const { Meta } = Card;
 
-export default function MovieList10(props) {
+export default function Phimbomtan(props) {
   let arr = [];
   arr.length = 10;
 
@@ -18,7 +18,7 @@ export default function MovieList10(props) {
     let [movieArr, setMovieArr] = useState([]);
 
     useEffect(() => {
-      movieService.GetMovieList()
+      movieService.GetMovieList2()
         .then((result) => {
           setMovieArr(result.data.content);
         })
@@ -61,9 +61,9 @@ export default function MovieList10(props) {
     });
   };
   return (
-    <div className='section'>
-      <h2>Phim thịnh hành</h2>
-      <Swiper spaceBetween={50} slidesPerView={6} className="text-center ">
+    <div className='ori'>
+      <h2>Phim bom tấn </h2>
+      <Swiper spaceBetween={50} slidesPerView={5} className="text-center ">
         {RenderCard()}
       </Swiper>
     </div>

@@ -26,8 +26,8 @@ let RenderBanner = () => {
 
   return bannerArr.map((banner, index) => {
     return <div key={index}>
-      <img style={contentStyle} src={banner.hinhAnh} alt="" />
-      
+      <img style={contentStyle} src="https://movies.sterkinekor.co.za/CDN/media/entity/get/FilmTitleGraphic/HO00002385?referenceScheme=HeadOffice&allowPlaceHolder=true" alt="" />
+    
     </div>
   })
 }

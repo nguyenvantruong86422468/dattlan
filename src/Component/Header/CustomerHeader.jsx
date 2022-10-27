@@ -63,7 +63,13 @@ export default function CustomerHeader() {
                   history.push("/home")
                 }} className="nav-link menu-item px-5">Home</span>
               </li>
-              <li className="nav-item menu-item">
+              <li>
+              <span style={{ cursor: "pointer", fontSize: 20, fontWeight: 700}} onClick={() => {
+                  history.push("/Thuvienphim")
+                }} className="nav-link menu-item px-5">Thư viện phim</span>
+              </li>
+
+                 {/* <li className="nav-item menu-item">
                 <span style={{ cursor: "pointer", fontSize: 20, fontWeight: 700 }} onClick={() => {
                   let user = JSON.parse(localStorage.getItem(USER_LOGIN))
                   if (user) {
@@ -72,12 +78,7 @@ export default function CustomerHeader() {
                     history.push("/login")
                   }
                 }} className="nav-link">Quản lý danh sách phim</span>
-              </li>
-              <li>
-              <span style={{ cursor: "pointer", fontSize: 20, fontWeight: 700 }} onClick={() => {
-                  history.push("/Thuvienphim")
-                }} className="nav-link menu-item px-5">Thư viện phim</span>
-              </li>
+              </li> */}
             </ul>
             {renderUser()}
           </div>

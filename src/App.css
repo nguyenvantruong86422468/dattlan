@@ -1,9 +1,15 @@
 .swiper-wrapper {
-    margin-left: 60px;
+    /* margin-left: 60px;
     padding: 50px;
     justify-content: flex-start;
     transition-property: transform;
     box-sizing: content-box;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+}
+#phimdangchieu{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -1rem;
+    flex-flow: row wrap;
 }

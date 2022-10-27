@@ -76,6 +76,7 @@ export default function BookTicketsAndPay(props) {
 
           <th>{gheDangDat.giaVe.toLocaleString()} VND</th>
         </tr>
+        
       );
     });
   };
@@ -94,7 +95,7 @@ export default function BookTicketsAndPay(props) {
           <h2>{thongTinPhim.tenPhim}</h2>
           <p>Địa Điểm: {thongTinPhim.tenCumRap}</p>
           <p>
-            {thongTinPhim.ngayChieu} - {thongTinPhim.gioChieu}
+            Ngày giờ chiếu : {thongTinPhim.ngayChieu} - {thongTinPhim.gioChieu}
           </p>
           <hr />
           <div>
@@ -151,6 +152,7 @@ export default function BookTicketsAndPay(props) {
                     .toLocaleString()}{" "}
                   VND
                 </th>
+                
               </tr>
             </tfoot>
           </table>

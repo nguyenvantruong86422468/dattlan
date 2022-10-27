@@ -18,7 +18,7 @@ export default function Thuvienphim(props) {
     let [movieArr, setMovieArr] = useState([]);
 
     useEffect(() => {
-      movieService.GetMovieList2()
+      movieService.GetMovieList6()
         .then((result) => {
           setMovieArr(result.data.content);
         })
@@ -62,7 +62,7 @@ export default function Thuvienphim(props) {
   };
   return (
     <div className='ori'>
-      <h2>Thư vien phim</h2>
+      <h2>Phim hot</h2>
       <Swiper spaceBetween={50} slidesPerView={6} className="text-center ">
         {RenderCard()}
       </Swiper>
