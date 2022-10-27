@@ -58,6 +58,7 @@ export default function FilmDetail(props) {
                         height={300}
                         src={filmDetail.hinhAnh}
                         alt=""
+                        
                       />
                       <div
                         className={`ml-3 text-white font-weight-bold ${filmDetailCss["reponsive"]}`}
@@ -73,6 +74,8 @@ export default function FilmDetail(props) {
                             ? `${filmDetail.moTa.slice(0, 300)}.....`
                             : filmDetail.moTa}
                         </p>
+
+
                       </div>
                     </div>
                   </div>

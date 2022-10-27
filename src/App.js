@@ -22,6 +22,8 @@ import { ChairTableLayout } from './layout/ChairTableLayout';
 import ChairTable from './pages/ChairTable/ChairTable';
 import Profile from './pages/Profile/Profile';
 import Thuvienphim from './pages/ThuVienPhim/Thuvienphim';
+import Tintuc from './Component/News/Tintuc';
+import Xemphimnhanh from './Component/Xemphim/Xemphimnhanh';
 export const history = createBrowserHistory();
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
           <CustomerLayout exact path="/chairtable" component={ChairTable} />
           <CustomerLayout exact path="/profile" component={Profile} />
           <CustomerLayout exact path="/Thuvienphim" component={Thuvienphim} />
+          <CustomerLayout exact path="/Tintuc" component={Tintuc} />
+          <CustomerLayout exact path="/Xemphimnhanh" component={Xemphimnhanh} />
 
           
           <AdminLayout exact path="/admin/film" component={MovieManager}/>

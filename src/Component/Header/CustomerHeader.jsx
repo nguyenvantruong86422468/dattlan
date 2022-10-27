@@ -68,8 +68,18 @@ export default function CustomerHeader() {
                   history.push("/Thuvienphim")
                 }} className="nav-link menu-item px-5">Thư viện phim</span>
               </li>
+              {/* <li>
+              <span style={{ cursor: "pointer", fontSize: 20, fontWeight: 700}} onClick={() => {
+                  history.push("/Tintuc")
+                }} className="nav-link menu-item px-5">Trang tin tức </span>
+              </li>
+              <li>
+              <span style={{ cursor: "pointer", fontSize: 20, fontWeight: 700}} onClick={() => {
+                  history.push("/Xemphimnhanh")
+                }} className="nav-link menu-item px-5">Xem phim trực tiếp</span>
+              </li> */}
 
-                 {/* <li className="nav-item menu-item">
+                 <li className="nav-item menu-item">
                 <span style={{ cursor: "pointer", fontSize: 20, fontWeight: 700 }} onClick={() => {
                   let user = JSON.parse(localStorage.getItem(USER_LOGIN))
                   if (user) {
@@ -77,8 +87,8 @@ export default function CustomerHeader() {
                   } else {
                     history.push("/login")
                   }
-                }} className="nav-link">Quản lý danh sách phim</span>
-              </li> */}
+                }} className="nav-link">Tổng quan phim</span>
+              </li>
             </ul>
             {renderUser()}
           </div>

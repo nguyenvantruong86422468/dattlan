@@ -72,6 +72,7 @@ export default function AdminLayout(props) {
                                         label:<NavLink to={"/admin/film/addfilm"}>Thêm phim mới</NavLink>,
                                         icon: <UploadOutlined/>
                                     }]
+                                    
                                 }
                             ]}
                         />
@@ -85,7 +86,7 @@ export default function AdminLayout(props) {
                                 display: "flex",
                                 justifyContent: "space-between"
                             }}
-                        ><h1>Trang Quản Lý Hệ Thống</h1>
+                        ><h1>Tổng quan phim</h1>
                             {renderUser()}
                         </Header>
                         <Content
